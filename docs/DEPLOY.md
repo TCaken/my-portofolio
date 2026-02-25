@@ -10,12 +10,14 @@
    git push -u origin main
    ```
 
-2. **Turn on GitHub Pages**  
+2. **Turn on GitHub Pages and set source to GitHub Actions** (do this before the first workflow run)  
    - Repo → **Settings** → **Pages**  
-   - Under **Build and deployment**, set **Source** to **GitHub Actions**.
+   - Under **Build and deployment**, set **Source** to **GitHub Actions** (not "Deploy from a branch").  
+   - You don’t select a branch; just pick the "GitHub Actions" source and save.
 
 3. **Trigger a deploy**  
-   - Push to `main`, or run the workflow manually: **Actions** → **Deploy to GitHub Pages** → **Run workflow**.
+   - Push to `main`, or go to **Actions** → **Deploy to GitHub Pages** → **Run workflow**.  
+   - The workflow will build and deploy; your site will be live when it finishes.
 
 Your site will be at:
 
@@ -76,6 +78,6 @@ After the workflow finishes and DNS has propagated, your site will load at your 
 
 | Step | What to do |
 |------|------------|
-| **GitHub Pages** | Push repo → Settings → Pages → Source: **GitHub Actions** → deploy on push to `main`. |
+| **GitHub Pages** | Push repo → Settings → Pages → Source: **GitHub Actions** → then push to `main` (or run the workflow) to deploy. |
 | **URL** | `https://YOUR_USERNAME.github.io/REPO_NAME/` |
 | **Custom domain** | Settings → Pages → Custom domain → set DNS (A or CNAME) → add variable `VITE_BASE_PATH` = `/` → re-run deploy. |
