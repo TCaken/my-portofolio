@@ -1,4 +1,4 @@
-import { useState, useMemo, useRef, useCallback } from 'react'
+import { useState, useMemo, useRef, useCallback, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { ArrowLeft } from 'lucide-react'
 import {
@@ -41,7 +41,9 @@ function ProjectileView({ y0, v0, deg, g, onDragY, width = 640, height = 400 }) 
   const padX = (width - range * scale) / 2
   const padY = (height - range * scale) / 2
 
-  layoutRef.current = { scale, padX, padY, height }
+  useEffect(() => {
+    layoutRef.current = { scale, padX, padY, height }
+  }, [scale, padX, padY, height])
 
   const toPx = (xm, ym) => ({
     x: padX + xm * scale,

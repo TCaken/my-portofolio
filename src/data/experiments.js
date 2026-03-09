@@ -28,6 +28,22 @@ export const experiments = [
     status: 'here',
   },
   {
+    id: 'scale-of-internet',
+    title: 'The Scale of the Internet',
+    description: 'Scroll down from 1 Byte to 1 Yottabyte. Dark, data-abyss style — no API, static content.',
+    href: '/experiments/scale-of-internet',
+    external: false,
+    status: 'here',
+  },
+  {
+    id: 'three-playground',
+    title: 'Three.js Playground',
+    description: 'Explore what Three.js can do: 3D shapes, orbit controls, wireframe, colors. Drag to rotate, scroll to zoom.',
+    href: '/experiments/three-playground',
+    external: false,
+    status: 'here',
+  },
+  {
     id: 'placeholder-1',
     title: 'Coming soon',
     description: 'Small tools and experiments. Some stay here, some move out when they grow.',

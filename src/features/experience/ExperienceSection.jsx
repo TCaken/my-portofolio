@@ -18,7 +18,7 @@ export function ExperienceSection() {
       </h2>
 
       <ul className="space-y-6" role="list" aria-label="Work experience timeline">
-        {resume.experience.map((job, i) => (
+        {resume.experience.map((job) => (
           <li key={`${job.company}-${job.period}`} role="listitem">
             <Card className="border-white/10 bg-white/5 backdrop-blur-xl">
               <CardHeader className="pb-2">

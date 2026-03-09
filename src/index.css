@@ -55,3 +55,25 @@ body {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
+/* Scale of Internet: transition particles */
+@keyframes scale-particle-rise {
+  0% {
+    opacity: 0.6;
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-80vh) scale(0.3);
+  }
+}
+@keyframes scale-particle-fall {
+  0% {
+    opacity: 0.6;
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(80vh) scale(0.3);
+  }
+}
