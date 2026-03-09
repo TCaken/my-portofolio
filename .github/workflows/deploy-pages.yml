@@ -40,10 +40,12 @@ jobs:
         run: npm ci
 
       # Project site: base = /repo-name/; custom domain: set VITE_BASE_PATH repo variable to /
+      # Optional: set VITE_ADSENSE_SLOT in repo Actions variables to show AdSense units
       - name: Build
         run: npm run build
         env:
           VITE_BASE_PATH: ${{ vars.VITE_BASE_PATH || format('/{0}/', github.event.repository.name) }}
+          VITE_ADSENSE_SLOT: ${{ vars.VITE_ADSENSE_SLOT }}
 
       - name: Setup Pages
         uses: actions/configure-pages@v4

@@ -44,6 +44,14 @@ export const experiments = [
     status: 'here',
   },
   {
+    id: 'color-palette-playground',
+    title: 'Color Palette Playground',
+    description: 'Turn words into deterministic color palettes for dashboards, brands, and UI themes.',
+    href: '/experiments/color-palette-playground',
+    external: false,
+    status: 'here',
+  },
+  {
     id: 'placeholder-1',
     title: 'Coming soon',
     description: 'Small tools and experiments. Some stay here, some move out when they grow.',

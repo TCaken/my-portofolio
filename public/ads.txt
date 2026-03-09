@@ -1,0 +1,3 @@
+# Replace with the exact line from AdSense: Account → Ads.txt
+# Format: google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
+google.com, pub-4571766420413441, DIRECT, f08c47fec0942fa0

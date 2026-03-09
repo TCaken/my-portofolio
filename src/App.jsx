@@ -7,6 +7,7 @@ import { IDTaxCalculatorPage } from '@/pages/experiments/IDTaxCalculatorPage'
 import { ProjectileCalculatorPage } from '@/pages/experiments/ProjectileCalculatorPage'
 import { ScaleOfInternetPage } from '@/pages/experiments/ScaleOfInternetPage'
 import { ThreePlaygroundPage } from '@/pages/experiments/ThreePlaygroundPage'
+import { ColorPalettePlaygroundPage } from '@/pages/experiments/ColorPalettePlaygroundPage'
 
 export default function App() {
   return (
@@ -19,6 +20,10 @@ export default function App() {
         <Route path="/experiments/projectile-calculator" element={<ProjectileCalculatorPage />} />
         <Route path="/experiments/scale-of-internet" element={<ScaleOfInternetPage />} />
         <Route path="/experiments/three-playground" element={<ThreePlaygroundPage />} />
+        <Route
+          path="/experiments/color-palette-playground"
+          element={<ColorPalettePlaygroundPage />}
+        />
       </Routes>
     </Layout>
   )

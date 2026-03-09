@@ -1,6 +1,7 @@
 import { NavLink, Link } from 'react-router-dom'
 import { resume } from '@/data/resume'
 import { cn } from '@/lib/utils'
+import { AdSense } from '@/components/AdSense'
 
 const { contact } = resume
 
@@ -63,6 +64,8 @@ export function Layout({ children }) {
       <main id="main-content" role="main" className="mx-auto max-w-5xl px-6 py-16 md:py-24">
         {children}
       </main>
+
+      <AdSense className="mx-auto max-w-5xl px-6 pb-6" />
 
       <footer
         role="contentinfo"
