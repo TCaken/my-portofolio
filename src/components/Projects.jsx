@@ -7,6 +7,7 @@ const fetchProjects = async () => {
   return response.json();
 };
 
+
 export function Projects() {
   const { data, isLoading, error } = useQuery({
     queryKey: ['projects'],
